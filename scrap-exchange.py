@@ -1,3 +1,10 @@
+# 지피티한테 이렇게 검색
+# 만약 1분에 한번씩 스크랩핑을 해서 몽고디비에 저장한다고 했을 때 이 로직대로 예시 코드를 작성해줘 
+# 1. 웹 스크랩핑으로 환율정보 실시간 수집
+# 2. 이를 kafka로 전송 
+# 3. kafka에서 수신한 데이터를 apache Spark Streaming을 사용하여 실시간으로 처리 spark를 통해 데이터 전처리 및 분석 수행
+# 4. 처리된 데이터 mongoDB에 저장 (원시데이터는 s3 저장) => 데이터 레이크 구축
+
 import requests
 from bs4 import BeautifulSoup
 import json
